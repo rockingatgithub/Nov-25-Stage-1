@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            background-color: lightgray;
+        }
+    </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h1 style="color: rebeccapurple;"> Login / Signup Form </h1>
+    <form action="https://google.com" method="post">
+
+        <div>
+
+            <label for="name"> Name:- </label>
+            <input id="name" type="text" name="name" />
+
+        </div>
+
+        <div>
+
+            <label for="email"> Email:- </label>
+            <input id="email" type="email" name="email-id" />
+
+        </div>
+
+        <div>
+
+            <label for="password"> Password:- </label>
+            <input id="password" type="password" name="user-password" />
+
+        </div>
+
+        <div>
+            <label for="DOB"> DOB </label>
+            <input id="DOB" name="DOB" type="date" />
+        </div>
+
+        <div>
+
+            Select your DSA preference:-
+            <label for="C++"> C++:- </label>
+            <input id="C++" type="radio" name="DSA" value="C++" />
+
+            <label for="Python"> Python:- </label>
+            <input id="Python" type="radio" name="DSA" value="Python" />
+
+            <label for="Java"> Java:- </label>
+            <input id="Java" type="radio" name="DSA" value="Java" />
+
+        </div>
+
+        <div>
+
+            Select your Web-D Technologies :-
+
+            <label for="JS"> JavaScript </label>
+            <input id="JS" type="checkbox" name="WEB" value="JS" />
+            <label for="ReactJS"> ReactJS </label>
+            <input id="ReactJS" type="checkbox" name="WEB" value="ReactJS" />
+            <label for="Angular"> Angular </label>
+            <input id="Angular" type="checkbox" name="WEB" value="Angular" />
+            <label for="Vue"> VueJS </label>
+            <input id="Vue" type="checkbox" name="WEB" value="VueJS" />
+
+        </div>
+
+        <div>
+            Please upload your Profile picture:-
+            <input type="file" name="profile-picture" />
+        </div>
+
+
+        <label for="car"> Select your car :- </label>
+        <select name="car" id="car">
+            <option value="BMW" > BMW </option>
+            <option value="Ferrari" selected> Ferrari </option>
+            <option value="Honda City" > Honda City </option>
+            <optgroup label="TATA" > 
+
+                <option value="Punch" > Punch </option>
+                <option value="Harrier" > Harrier </option>
+                <option value="Nano" > Nano </option>
+                <option value="Indica" > Indica </option>
+
+            </optgroup>
+
+            <option value="Fortuner" > Toyota Fortuner </option>
+        </select>
+
+        <div>
+            <button type="submit"> Submit </button>
+            <button type="reset" > Reset </button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
