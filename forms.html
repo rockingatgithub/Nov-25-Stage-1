@@ -5,34 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
+
+        /* simple selectors */
+
         form {
             background-color: lightgray;
+            width: 600px;
+            height: 200px;
+            margin: 24px;
+            border: 2px solid black;
+            padding: 24px;
         }
+
+        h1 {
+            color: brown;
+        }
+
+        #name-div {
+           margin-top: 8px; 
+        }
+
+        .group-1 {
+            color: brown
+        }
+
+        /* combinator selectors */
+
+        div span {
+            font-weight: 700;
+        }
+
+        div > span {
+            color: brown;
+        }
+
+        div + span {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div ~ span {
+            font-family: cursive;
+        }
+
     </style>
-    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-    <h1 style="color: rebeccapurple;"> Login / Signup Form </h1>
+    <h1> Login / Signup Form </h1>
     <form action="https://google.com" method="post">
 
-        <div>
+        <div id="name-div">
 
             <label for="name"> Name:- </label>
             <input id="name" type="text" name="name" />
 
         </div>
 
-        <div>
+        <div class="group-1">
 
             <label for="email"> Email:- </label>
             <input id="email" type="email" name="email-id" />
 
         </div>
 
-        <div>
+        <div class="group-1">
 
             <label for="password"> Password:- </label>
             <input id="password" type="password" name="user-password" />
@@ -81,27 +120,52 @@
 
         <label for="car"> Select your car :- </label>
         <select name="car" id="car">
-            <option value="BMW" > BMW </option>
+            <option value="BMW"> BMW </option>
             <option value="Ferrari" selected> Ferrari </option>
-            <option value="Honda City" > Honda City </option>
-            <optgroup label="TATA" > 
+            <option value="Honda City"> Honda City </option>
+            <optgroup label="TATA">
 
-                <option value="Punch" > Punch </option>
-                <option value="Harrier" > Harrier </option>
-                <option value="Nano" > Nano </option>
-                <option value="Indica" > Indica </option>
+                <option value="Punch"> Punch </option>
+                <option value="Harrier"> Harrier </option>
+                <option value="Nano"> Nano </option>
+                <option value="Indica"> Indica </option>
 
             </optgroup>
 
-            <option value="Fortuner" > Toyota Fortuner </option>
+            <option value="Fortuner"> Toyota Fortuner </option>
         </select>
 
         <div>
             <button type="submit"> Submit </button>
-            <button type="reset" > Reset </button>
+            <button type="reset"> Reset </button>
         </div>
 
     </form>
+
+    <div>
+        <p>
+            I am first sentence. <span> I am the second sentence. </span>
+        </p>
+        <span>
+            Span tag outside fo the paragraph!
+        </span>
+    </div>
+
+    <span>
+        This span is outside any div!
+    </span>
+
+    <span>
+        This span is outside any div!
+    </span>
+
+    <p> Para outside div! </p>
+
+    <span> Span tag after para! </span>
+
+    <div>
+        <span> I am a nested span! </span>
+    </div>
 
 </body>
 
